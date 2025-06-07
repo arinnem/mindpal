@@ -1,0 +1,359 @@
+# "Bạn Yêu Thương" (Beloved Friend) - Digital Sanctuary
+# Product Requirements Document
+# Version 1.0
+
+================================================================================
+TABLE OF CONTENTS
+================================================================================
+1. Executive Summary
+2. Experience & Design Vision
+3. Technical Specification
+4. Implementation Roadmap
+5. Success Metrics
+
+================================================================================
+1. EXECUTIVE SUMMARY
+================================================================================
+
+"Bạn Yêu Thương" is an AI-first digital sanctuary designed to provide emotional support and therapeutic guidance for students. The platform transforms traditional mental health support into an immersive, living garden experience where every interaction is an act of self-care and growth.
+
+Key Differentiators:
+- Living, breathing garden interface that evolves with user engagement
+- AI companion (Linh) that grows and adapts with the user
+- Unique approach to thought management through "Thought Creatures"
+- Integrated therapy garden with nature-based therapeutic activities
+- Memory system that visualizes emotional journey through a lake of pearls
+
+================================================================================
+2. EXPERIENCE & DESIGN VISION
+================================================================================
+
+2.1 Core Philosophy
+------------------
+The platform is built on the belief that mental health support should feel like a gentle conversation with a dear friend who happens to be a magical garden spirit. Every element is designed to be nurturing, non-judgmental, and growth-oriented.
+
+2.2 The Living Garden Experience
+-------------------------------
+
+2.2.1 Initial State
+- A cozy, intimate garden space
+- Glowing "Cây Tình Bạn" (Tree of Friendship) at center
+- Gentle ambient sounds
+- Soft, natural lighting
+
+2.2.2 Garden Evolution
+- Grows and changes like a living diary
+- Reflects user's emotional state
+- Unlocks new areas with progress
+- Celebrates achievements through visual transformations
+
+2.2.3 Weather & Atmosphere System
+- Emotional Weather:
+  * Sunny days for positive moods
+  * Gentle rain for reflection
+  * Starlit nights for deep thoughts
+  * Aurora effects for breakthroughs
+- Time Flow:
+  * Morning light for new beginnings
+  * Afternoon warmth for active engagement
+  * Evening glow for reflection
+  * Night peace for rest
+
+2.3 Core Features
+----------------
+
+2.3.1 Linh - The Garden Spirit Companion
+- Visual Evolution Stages:
+  1. Gentle wisp of light
+  2. Small, glowing sprite with leaf-like features
+  3. Defined spirit with expressive features
+  4. Fully formed garden guardian
+- Interaction Styles:
+  * Playful: "Shall we dance with the butterflies?"
+  * Supportive: "I notice the garden feels heavy today..."
+  * Guiding: "Look how the Worrywart has grown calmer..."
+  * Celebratory: "Your garden has bloomed so beautifully!"
+
+2.3.2 Hồ Ký Ức (Lake of Memories)
+- Memory Pearls:
+  * Golden: moments of joy
+  * Blue: peaceful reflections
+  * Silver: insights
+  * Rainbow: breakthroughs
+- Interactive Elements:
+  * Touch to relive memories
+  * Watch constellations form
+  * See emotional patterns as ripples
+  * Create new pearls through reflection
+
+2.3.3 Sinh Vật Ý Nghĩ (Thought Creatures)
+- Creature Types:
+  * Bé Lo Lắng (Little Worrywart)
+  * Bé Sợ Hãi (Little Fear)
+  * Bé Buồn Bã (Little Sadness)
+  * Bé Giận Dữ (Little Anger)
+  * Bé Tự Ti (Little Self-Doubt)
+- Transformation Journey:
+  1. Initial appearance in wilderness
+  2. Gradual approach and understanding
+  3. Nurturing through positive actions
+  4. Transformation into garden companions
+  5. Integration into garden ecosystem
+
+2.3.4 Vườn Trị Liệu (Therapy Garden)
+- Sacred Spaces:
+  * Meditation Grove
+  * Breathing Garden
+  * Courage Path
+  * Wisdom Tree
+  * Healing Spring
+- Therapeutic Activities:
+  * Guided Growth
+  * Emotional Alchemy
+  * Nature-Based Therapy
+  * Creative Expression
+
+2.4 User Journey
+---------------
+
+2.4.1 The First Seed (Onboarding)
+1. The Invitation
+2. The Planting
+3. Meeting Linh
+
+2.4.2 Daily Garden Life
+1. Morning Ritual
+2. Active Engagement
+3. Evening Reflection
+
+================================================================================
+3. TECHNICAL SPECIFICATION
+================================================================================
+
+3.1 System Architecture
+----------------------
+
+3.1.1 Core Services
+```typescript
+interface GardenSystem {
+  environment: {
+    weather: WeatherEngine;
+    time: TimeSystem;
+    season: SeasonManager;
+  };
+  
+  linh: {
+    personality: PersonalityEngine;
+    interaction: InteractionManager;
+    evolution: EvolutionSystem;
+  };
+  
+  features: {
+    journal: JournalSystem;
+    creatures: CreatureSystem;
+    therapy: TherapyGardenSystem;
+  };
+  
+  user: {
+    profile: UserProfile;
+    progress: ProgressTracker;
+    preferences: UserPreferences;
+  };
+}
+```
+
+3.1.2 AI Integration
+```typescript
+interface AIServices {
+  models: {
+    conversation: GeminiModel;
+    image: ImagenModel;
+    analysis: AnalysisModel;
+  };
+  
+  linh: {
+    personality: PersonalityModel;
+    evolution: EvolutionModel;
+    interaction: InteractionModel;
+  };
+  
+  therapy: {
+    assessment: AssessmentModel;
+    guidance: GuidanceModel;
+    progress: ProgressModel;
+  };
+}
+```
+
+3.2 Feature Implementation
+-------------------------
+
+3.2.1 Garden Engine
+```typescript
+class GardenEngine {
+  async updateEnvironment(userState: UserState): Promise<GardenState>;
+  async unlockFeature(achievement: Achievement): Promise<Feature>;
+  async saveState(): Promise<GardenState>;
+}
+```
+
+3.2.2 Therapy Garden System
+```typescript
+class TherapyGardenSystem {
+  async generateActivity(context: TherapyContext): Promise<Activity>;
+  async trackProgress(activity: Activity): Promise<Progress>;
+  async getResources(need: TherapeuticNeed): Promise<Resource[]>;
+}
+```
+
+3.3 Data Models
+--------------
+
+3.3.1 User Data
+```typescript
+interface UserData {
+  profile: {
+    id: string;
+    preferences: UserPreferences;
+    progress: ProgressData;
+  };
+  
+  garden: {
+    state: GardenState;
+    features: Feature[];
+    creatures: ThoughtCreature[];
+  };
+  
+  therapy: {
+    activities: Activity[];
+    progress: TherapyProgress;
+    resources: Resource[];
+  };
+}
+```
+
+3.3.2 Garden State
+```typescript
+interface GardenState {
+  environment: {
+    weather: WeatherState;
+    time: TimeState;
+    season: SeasonState;
+  };
+  
+  features: {
+    unlocked: Feature[];
+    active: Feature[];
+    progress: Progress[];
+  };
+  
+  therapy: {
+    activeSpaces: TherapySpace[];
+    activities: Activity[];
+    progress: TherapyProgress;
+  };
+}
+```
+
+3.4 Security & Privacy
+---------------------
+
+3.4.1 Data Protection
+```typescript
+interface SecuritySystem {
+  encryption: {
+    data: EncryptionService;
+    communication: SecureChannel;
+  };
+  
+  access: {
+    authentication: AuthService;
+    authorization: PermissionSystem;
+  };
+  
+  privacy: {
+    data: DataProtection;
+    consent: ConsentManagement;
+  };
+}
+```
+
+3.4.2 Crisis Management
+```typescript
+interface CrisisSystem {
+  detection: {
+    analysis: CrisisAnalysis;
+    assessment: RiskAssessment;
+  };
+  
+  response: {
+    intervention: CrisisIntervention;
+    support: EmergencySupport;
+  };
+  
+  monitoring: {
+    tracking: CrisisTracking;
+    reporting: IncidentReporting;
+  };
+}
+```
+
+================================================================================
+4. IMPLEMENTATION ROADMAP
+================================================================================
+
+Phase 1: Foundation (Months 1-2)
+- Basic garden environment
+- Linh's initial form
+- Core journal system
+- Basic creature system
+
+Phase 2: Core Features (Months 3-4)
+- Full garden evolution system
+- Advanced Linh interactions
+- Memory pearl system
+- Basic therapy garden
+
+Phase 3: Advanced Features (Months 5-6)
+- Complete therapy garden
+- Advanced creature system
+- AI-powered insights
+- Mobile optimization
+
+Phase 4: Enhancement (Months 7-8)
+- Advanced analytics
+- Community features
+- School integration
+- Parent portal
+
+================================================================================
+5. SUCCESS METRICS
+================================================================================
+
+5.1 User Engagement
+- Daily active users
+- Session duration
+- Feature usage patterns
+- Return rate
+
+5.2 Therapeutic Impact
+- User-reported mood improvements
+- Crisis intervention effectiveness
+- Feature effectiveness ratings
+- User progress tracking
+
+5.3 Technical Performance
+- System uptime
+- Response time
+- AI accuracy
+- Error rates
+
+5.4 Safety & Privacy
+- Data protection compliance
+- Crisis detection accuracy
+- User privacy satisfaction
+- Incident response time
+
+================================================================================
+END OF DOCUMENT
+================================================================================ 
