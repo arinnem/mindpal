@@ -1,0 +1,100 @@
+Nền tảng điều phối công việc nhằm nâng cao năng suất và tăng cường năng lực quản trị
+Tầm nhìn: Xây dựng một trung tâm điều hành công việc số, nơi mọi chỉ đạo được chuyển hóa thành công việc để có thể đo lường và giám sát. Hệ thống là công cụ cốt lõi để giải phóng sức lao động thông qua tự động hóa, đồng thời cung cấp dữ liệu minh bạch, tức thời giúp củng cố và nâng cao năng lực quản trị ở mọi cấp độ trong tổ chức.
+1. Đối tượng người dùng và vai trò
+Hệ thống được thiết kế theo một cấu trúc phân cấp linh hoạt, không giới hạn số tầng, chủ yếu bao gồm các vai trò sau:
+•	Người giao việc (Assigner): Bất kỳ cá nhân nào trong tổ chức có thẩm quyền khởi tạo và giao một hoặc nhiều công việc cho cấp dưới trực tiếp. Họ chịu trách nhiệm về mục tiêu cuối cùng của công việc đã giao.
+•	Người nhận việc (Assignee): Bất kỳ cá nhân nào tiếp nhận công việc từ cấp trên. Sau khi nhận việc, họ có hai lựa chọn:
+1.	Trực tiếp thực thi công việc.
+2.	Trở thành Người giao việc bằng cách tiếp tục phân rã công việc đó thành các nhiệm vụ nhỏ hơn và giao cho cấp dưới của mình.
+•	Thư ký / Người được ủy quyền (Delegate): Là người có thể hành động thay mặt cho một Người giao việc hoặc Người nhận việc để thực hiện các tác vụ vận hành như: tạo và giao các công việc con, theo dõi tiến độ, và tổng hợp báo cáo. Quyền hạn này phải được người có thẩm quyền cấp và ghi nhận rõ ràng trên hệ thống.
+•	Kiểm toán viên / Thanh tra (Auditor/Inspector): Vai trò độc lập, có quyền truy cập để xem lại toàn bộ lịch sử, dấu vết của một quy trình công việc nhằm đảm bảo tính tuân thủ và minh bạch.
+•	Quản trị viên hệ thống (System Administrator): Chịu trách nhiệm về mặt kỹ thuật, quản lý tài khoản, phân quyền, cấu hình hệ thống và bảo trì.
+2. Vấn đề cốt lõi và giải pháp
+Vấn đề:
+•	Năng suất lao động chưa cao: Công việc bị phân mảnh qua nhiều kênh (công văn, email, chat, miệng) gây thất lạc, chồng chéo và lãng phí thời gian vào việc tìm kiếm thông tin, làm rõ yêu cầu thay vì tập trung vào chuyên môn.
+•	Năng lực quản trị chưa được nâng tầm: Việc thiếu một cơ chế giám sát tập trung và minh bạch khiến Lãnh đạo khó đo lường hiệu suất, xác định các điểm nghẽn và ra quyết định dựa trên dữ liệu thực tế. Trách nhiệm không rõ ràng khi có sự cố xảy ra.
+•	Chi phí quản lý cao: Cấp quản lý tốn nhiều nguồn lực để theo dõi, đôn đốc thủ công và tổng hợp báo cáo, làm giảm thời gian dành cho các hoạt động chiến lược.
+•	Rủi ro về tuân thủ: Khó khăn trong việc lưu trữ bằng chứng và truy xuất nguồn gốc của một chỉ đạo, tạo ra rủi ro pháp lý và làm suy giảm văn hóa trách nhiệm.
+Giải pháp:
+Một nền tảng tập trung duy nhất giúp:
+•	Tối ưu hóa và nâng cao năng suất: Tự động hóa việc bóc tách công việc từ văn bản, chuẩn hóa quy trình giao - nhận việc, giúp mỗi cá nhân giải phóng thời gian khỏi các tác vụ hành chính để tập trung vào công việc tạo ra giá trị.
+•	Tăng cường năng lực quản trị: Cung cấp một "cây công việc" trực quan, cho phép nhà quản lý ở mọi cấp nhìn thấu suốt dòng chảy công việc từ trên xuống dưới. Dữ liệu tiến độ thời gian thực giúp phát hiện sớm rủi ro và đưa ra các quyết định can thiệp kịp thời.
+•	Minh bạch hóa trách nhiệm: Mọi hành động đều được ghi lại trong một nhật ký không thể thay đổi, làm cơ sở vững chắc để quy trách nhiệm và xây dựng văn hóa làm việc hiệu suất cao.
+•	Chuyển đổi dữ liệu thành công cụ quản trị: Biến mọi chỉ đạo thành các công việc có thể theo dõi, đo lường và phân tích, cung cấp các báo cáo thông minh về hiệu suất và năng suất lao động.
+3. Luồng quy trình chính của hệ thống
+Đây là mô tả chi tiết về vòng đời của một yêu cầu công việc, thể hiện rõ tính phân cấp và khả năng giám sát.
+Giai đoạn 1: Tiếp nhận và Khởi tạo công việc
+1.	Tiếp nhận đầu vào: Một yêu cầu công việc mới được đưa vào hệ thống qua nhiều kênh: tải tệp trực tiếp, gửi email, hoặc đồng bộ từ cloud.
+2.	Khởi tạo công việc: Người giao việc (hoặc thư ký được ủy quyền) sử dụng một trong các phương pháp sau để tạo công việc gốc:
+o	Trích xuất bằng AI: Từ một văn bản chỉ đạo.
+o	Nhập hàng loạt: Từ một kế hoạch dự án.
+o	Sử dụng mẫu: Cho các quy trình lặp lại.
+o	Tạo thủ công: Cho các công việc phát sinh.
+3.	Giao việc cấp 1: Công việc gốc sau khi được chuẩn hóa sẽ được giao cho một hoặc nhiều Người nhận việc cấp 1.
+Giai đoạn 2: Phân rã và Ủy quyền theo tầng
+1.	Người nhận việc cấp 1 xem xét công việc được giao.
+2.	Họ có thể trực tiếp thực thi, hoặc trở thành Người giao việc cấp 1 bằng cách phân rã công việc thành các nhiệm vụ con.
+3.	Họ tiếp tục giao các nhiệm vụ con này cho Người nhận việc cấp 2.
+4.	Quy trình này có thể lặp lại không giới hạn (cấp 2 giao cho cấp 3, v.v.), tạo thành một cây công việc phân cấp đa tầng.
+Giai đoạn 3: Thực thi và Giám sát theo cây công việc
+1.	Thực thi: Những Người nhận việc ở tầng cuối cùng của mỗi nhánh sẽ là người trực tiếp thực hiện công việc và cập nhật trạng thái, kết quả.
+2.	Giám sát:
+o	Người giao việc ở bất kỳ cấp nào cũng có thể xem được toàn bộ cây công việc do mình khởi tạo và các nhánh con bên dưới, cho đến tầng thấp nhất.
+o	Họ có thể theo dõi tiến độ tổng hợp của công việc chính, đồng thời có thể xem chi tiết trạng thái của từng công việc con ở bất kỳ cấp nào bên dưới.
+o	Hệ thống cung cấp cảnh báo và thông báo tự động khi có một nhánh công việc bất kỳ trong cây bị chậm tiến độ.
+Giai đoạn 4: Hoàn thành và Báo cáo ngược
+1.	Khi một công việc con ở tầng thấp nhất hoàn thành, trạng thái sẽ được cập nhật.
+2.	Tiến độ hoàn thành sẽ tự động được tính toán và báo cáo ngược lên cho công việc cha ở cấp trên trực tiếp.
+3.	Đề xuất giải pháp cho khó khăn, vướng mắc: Trong quá trình thực thi, nếu gặp khó khăn, Người nhận việc có thể gửi một "Báo cáo vướng mắc" kèm theo "Đề xuất giải pháp" ngược lên cho Người giao việc trực tiếp. Luồng này giúp cấp trên nắm bắt được vấn đề và hỗ trợ xử lý kịp thời, thay vì chỉ nhận báo cáo khi đã quá muộn.
+4.	Khi tất cả các công việc con trong một nhánh hoàn thành, công việc cha của nhánh đó sẽ tự động được đánh dấu hoàn thành. Quá trình này tiếp diễn cho đến khi công việc gốc ở cấp cao nhất được hoàn thành.
+5.	Toàn bộ lịch sử của cây công việc, từ lúc tạo, các lần phân rã, giao việc, cho đến khi hoàn thành, đều được lưu lại vĩnh viễn trong nhật ký kiểm toán.
+4. Các module chức năng chính
+•	Module 1: Cổng tiếp nhận và số hóa đa kênh Cửa ngõ đầu vào của hệ thống, cho phép tiếp nhận yêu cầu từ nhiều nguồn: công văn ban hành từ cấp trên, tệp tải lên, email chuyên dụng, và các dịch vụ lưu trữ đám mây.
+•	Module 2: Lõi xử lý AI Bộ não giúp tăng năng suất bằng cách tự động hóa việc phân tích văn bản (OCR & NLP) để đề xuất các công việc có cấu trúc, giúp người dùng tiết kiệm thời gian nhập liệu.
+•	Module 3: Trung tâm quản lý công việc Trái tim của hệ thống, được thiết kế lại để hỗ trợ mạnh mẽ cấu trúc phân cấp:
+o	Quản lý công việc: Hỗ trợ đầy đủ các phương thức tạo việc.
+o	Phân rã công việc: Cho phép tạo cấu trúc công việc cha-con không giới hạn cấp bậc.
+o	Chế độ xem cây công việc (Task Tree View): Đây là tính năng quản trị cốt lõi. Nó cho phép một Người giao việc nhìn thấy một sơ đồ phân cấp trực quan của tất cả các công việc bắt nguồn từ họ, bao gồm tất cả các nhánh và các cấp con cháu, cùng với trạng thái và tiến độ của từng nút trong cây.
+o	Các chế độ xem linh hoạt: Cung cấp các góc nhìn khác như List, Calendar, Gantt Chart (có mối quan hệ trước – sau giữa các công việc) để phục vụ nhu cầu quản lý đa dạng.
+•	Module 4: Phân tích và báo cáo quản trị Module này chuyển đổi dữ liệu vận hành thành công cụ quản trị, tập trung vào:
+o	Bảng điều khiển năng suất: Cung cấp các biểu đồ về thời gian hoàn thành trung bình, khối lượng công việc theo từng cá nhân/bộ phận, tỷ lệ công việc đúng hạn/trễ hạn.
+o	Báo cáo quản trị: Cho phép tạo báo cáo tùy chỉnh để phân tích các điểm nghẽn trong quy trình, đánh giá hiệu suất phân bổ nguồn lực và đo lường hiệu quả của từng cấp quản lý; hiểu được trong tuần/tháng/quý có những công việc nào sắp tới hạn, đã quá hạn, đang triển khai.
+•	Module 5: Nhật ký lưu giữ thông tin Đảm bảo tính minh bạch và trách nhiệm giải trình bằng cách ghi lại mọi hành động. Module này là nền tảng cho năng lực quản trị dựa trên thông tin minh bạch.
+•	Module 6: Tương tác và thông báo thời gian thực Cung cấp một hệ thống thông báo và tương tác đa kênh, tự động và thông minh để đảm bảo không một thông tin nào bị bỏ sót:
+o	Thông báo chủ động: Tự động gửi thông báo (qua email, calendar, và trực tiếp trên hệ thống) khi người dùng: được giao một công việc mới, có công việc sắp đến hạn, có công việc đã quá hạn, hoặc được nhắc đến trong một bình luận.
+o	Cơ chế báo cáo vướng mắc: Tích hợp tính năng cho phép người nhận việc chính thức gửi các báo cáo về khó khăn và đề xuất hướng giải quyết lên cấp giao việc để nhận được sự hỗ trợ kịp thời.
+•	Module 7: Quản trị hệ thống và cấu hình Trung tâm điều khiển dành cho Quản trị viên, bao gồm:
+o	Quản lý người dùng và phân quyền: Thiết lập các vai trò và quyền hạn chi tiết của người dùng.
+o	Quản lý ủy quyền: Cung cấp giao diện để một người dùng có thể cấp quyền cho thư ký/người được ủy quyền thay mặt mình thực hiện các tác vụ cụ thể trong một khoảng thời gian nhất định.
+o	Quản lý mẫu và quy tắc tự động hóa: Quản lý các mẫu email, mẫu biểu báo cáo giúp chuẩn hóa và tăng tốc các quy trình lặp lại.
+5. Luồng làm việc chính theo vai trò người dùng
+•	Luồng của người giao việc (cấp quản lý):
+1.	HĐTV ban hành nghị quyết trong đó có 10 đầu mục công việc khác nhau.
+2.	Đăng nhập hệ thống, tạo ra 10 công việc gốc và giao cho Tổng Giám đốc (Người nhận việc cấp 1). Lưu ý: HĐTV cũng có thể giao việc trực tiếp cho cấp PTGĐ hoặc các phòng ban.
+3.	Tới lượt mình, Tổng Giám đốc phân rã 10 công việc được HĐTV giao thành 15 công việc và giao cho 02 PTGĐ cùng 05 phòng ban xử lý.
+4.	Cấp HĐTV (hoặc thư ký theo ủy quyền hoặc Ban Thư ký) truy cập vào "Chế độ xem cây công việc" và thấy công việc của HĐTV đã được phân rã thành các công việc con và giao xuống cho cấp thấp hơn (Người nhận việc cấp 2).
+5.	Họ có thể thấy ngay nhánh nào đang chậm tiến độ và có thể trực tiếp vào bình luận ở một công việc con cấp 2 để yêu cầu làm rõ, mà không cần thông qua cấp trung gian.
+•	Luồng của người nhận việc (cấp trung gian):
+1.	Nhận được công việc "Tổng hợp thông tin nhân sự có bằng Đại học trở lên" từ cấp PTGĐ.
+2.	Phân rã công việc này thành 2 nhiệm vụ con: "Làm việc với bộ phận nhân sự", "Tổng hợp thông tin từ nhân sự".
+3.	Giao 2 nhiệm vụ này cho 2 nhân viên tương ứng. Giờ đây, họ trở thành Người giao việc cho 2 nhiệm vụ này.
+4.	Họ chịu trách nhiệm giám sát và báo cáo tiến độ của công việc lớn lên cấp trên.
+•	Luồng của thư ký được ủy quyền:
+1.	HĐTV có thể ủy quyền cho Ban Thư ký hoặc TGĐ đã ủy quyền cho thư ký của mình để "Giao việc và theo dõi các công việc thuộc dự án X".
+2.	Thư ký đăng nhập vào hệ thống, chuyển sang giao diện làm việc thay mặt cho Lãnh đạo.
+3.	Dựa trên biên bản họp, thư ký tạo 5 công việc con từ công việc chính của dự án X và giao cho các cấp theo chỉ đạo của BLĐ.
+4.	Mọi hành động của thư ký đều được ghi lại trong nhật ký là "Thực hiện bởi [Tên thư ký] thay mặt cho [Lãnh đạo]".
+6. Tích hợp hệ thống
+•	Email: Tích hợp hai chiều với hệ thống email nội bộ hoặc bên ngoài.
+•	Cloud Storage: Tích hợp với OneDrive hiện có của Tập đoàn.
+•	Lịch (Calendar): Đồng bộ deadline công việc vào lịch cá nhân của người dùng.
+•	Hệ thống định danh (SSO): Tích hợp với tài khoản Microsoft của Tập đoàn.
+•	ERP/HRM: (Lộ trình tương lai) Tích hợp với hệ thống nhân sự để đồng bộ tự động thông tin người dùng, phòng ban, cơ cấu tổ chức.
+7. Dữ liệu và phân tích
+•	Dashboard giúp các cấp xem được chi tiết cây công việc, những công việc cần xử lý, công việc đến hạn, công việc quá hạn, công việc đang xử lý.
+•	Xem được vấn đề đang nằm ở chỗ nào, sự phụ thuộc lẫn nhau giữa các công việc.
+8. Yếu tố phi chức năng
+•	Bảo mật: Phân quyền truy cập chi tiết, mã hóa dữ liệu.
+•	Hiệu năng: Thời gian phản hồi nhanh, có thể xử lý nhiều một lúc.
+•	Tính dễ sử dụng: Giao diện trực quan, sạch sẽ, yêu cầu thời gian đào tạo tối thiểu cho người dùng cuối.
+

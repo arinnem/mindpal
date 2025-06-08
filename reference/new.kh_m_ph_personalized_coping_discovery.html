@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám phá - Bạn Thương | Khám phá Chiến lược Coping Cá nhân hóa</title>
+    <meta name="description" content="Khám phá các chiến lược coping được cá nhân hóa dựa trên văn hóa Việt Nam và tiến trình trị liệu của bạn.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body class="bg-background font-inter text-text-primary antialiased">
+    <!-- Crisis Support Button - Always Accessible -->
+    <div class="fixed top-4 right-4 z-50">
+        <button class="bg-primary hover:bg-primary-600 text-white px-4 py-2 rounded-full shadow-therapeutic breathing-transition flex items-center gap-2 text-sm font-medium">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+            </svg>
+            Hỗ trợ khẩn cấp
+        </button>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="bg-surface/80 backdrop-blur-sm border-b border-border-light sticky top-0 z-40">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm0 6c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4zm0 18c-3.314 0-6.22-1.686-7.93-4.25C8.588 20.124 12.294 19 16 19s7.412 1.124 7.93 2.75C22.22 24.314 19.314 26 16 26z"/>
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <h1 class="text-xl font-be-vietnam font-semibold text-text-primary">Bạn Thương</h1>
+                        <p class="text-xs text-text-secondary">Sanctuary tâm lý số</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="homepage_therapeutic_digital_sanctuary.html" class="text-text-secondary hover:text-text-primary hover:bg-surface px-3 py-2 rounded-md text-sm font-medium breathing-transition">Trang chủ</a>
+                        <a href="ai_chat_interface_conversational_therapy.html" class="text-text-secondary hover:text-text-primary hover:bg-surface px-3 py-2 rounded-md text-sm font-medium breathing-transition">AI Chat</a>
+                        <a href="t_m_s_m_ng_private_journal_space.html" class="text-text-secondary hover:text-text-primary hover:bg-surface px-3 py-2 rounded-md text-sm font-medium breathing-transition">Tâm sự</a>
+                        <a href="kh_m_ph_personalized_coping_discovery.html" class="bg-primary text-white px-3 py-2 rounded-md text-sm font-medium">Khám phá</a>
+                        <a href="progress_dashboard_emotional_growth_visualization.html" class="text-text-secondary hover:text-text-primary hover:bg-surface px-3 py-2 rounded-md text-sm font-medium breathing-transition">Tiến trình</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="bg-surface inline-flex items-center justify-center p-2 rounded-md text-text-secondary hover:text-text-primary hover:bg-primary-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary" onclick="toggleMobileMenu()">
+                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-surface border-t border-border-light">
+                <a href="homepage_therapeutic_digital_sanctuary.html" class="text-text-secondary hover:text-text-primary hover:bg-primary-50 block px-3 py-2 rounded-md text-base font-medium">Trang chủ</a>
+                <a href="ai_chat_interface_conversational_therapy.html" class="text-text-secondary hover:text-text-primary hover:bg-primary-50 block px-3 py-2 rounded-md text-base font-medium">AI Chat</a>
+                <a href="t_m_s_m_ng_private_journal_space.html" class="text-text-secondary hover:text-text-primary hover:bg-primary-50 block px-3 py-2 rounded-md text-base font-medium">Tâm sự mỏng</a>
+                <a href="h_nh_d_ng_t_i_thought_monsters_gamification.html" class="text-text-secondary hover:text-text-primary hover:bg-primary-50 block px-3 py-2 rounded-md text-base font-medium">Hình dáng tôi</a>
+                <a href="kh_m_ph_personalized_coping_discovery.html" class="bg-primary text-white block px-3 py-2 rounded-md text-base font-medium">Khám phá</a>
+                <a href="progress_dashboard_emotional_growth_visualization.html" class="text-text-secondary hover:text-text-primary hover:bg-primary-50 block px-3 py-2 rounded-md text-base font-medium">Tiến trình</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Personalized Recommendations -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-background to-surface">
+        <div class="absolute inset-0 bg-gradient-to-r from-secondary-50/30 to-accent-50/30"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl lg:text-5xl font-be-vietnam font-semibold text-text-primary mb-6 animate-therapeutic-fade">
+                    Khám phá <span class="text-secondary">chiến lược coping</span><br>
+                    <span class="text-primary">dành riêng cho bạn</span>
+                </h1>
+                <p class="text-lg lg:text-xl text-text-secondary mb-8 max-w-3xl mx-auto leading-relaxed">
+                    Tìm hiểu những kỹ thuật và hoạt động được cá nhân hóa dựa trên văn hóa Việt Nam và hành trình trị liệu của bạn
+                </p>
+            </div>
+
+            <!-- AI Recommendation Engine -->
+            <div class="bg-white/80 backdrop-blur-sm rounded-sanctuary p-8 shadow-therapeutic max-w-4xl mx-auto mb-12">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-xl font-be-vietnam font-medium text-text-primary">Gợi ý dành riêng cho bạn</h3>
+                    <button class="text-secondary hover:text-secondary-700 breathing-transition" onclick="refreshRecommendations()">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Today's Recommendation -->
+                    <div class="bg-primary-50 rounded-gentle p-6 border border-primary-200">
+                        <div class="w-12 h-12 bg-primary-100 rounded-gentle flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-be-vietnam font-medium text-text-primary mb-2">Hôm nay</h4>
+                        <p class="text-sm text-text-secondary mb-3">Thở sâu 4-7-8 khi căng thẳng</p>
+                        <button class="text-primary hover:text-primary-700 text-sm font-medium breathing-transition">Thử ngay →</button>
+                    </div>
+
+                    <!-- Weekly Challenge -->
+                    <div class="bg-secondary-50 rounded-gentle p-6 border border-secondary-200">
+                        <div class="w-12 h-12 bg-secondary-100 rounded-gentle flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-be-vietnam font-medium text-text-primary mb-2">Thử thách tuần</h4>
+                        <p class="text-sm text-text-secondary mb-3">7 ngày thực hành lòng biết ơn</p>
+                        <button class="text-secondary hover:text-secondary-700 text-sm font-medium breathing-transition">Tham gia →</button>
+                    </div>
+
+                    <!-- Cultural Practice -->
+                    <div class="bg-accent-50 rounded-gentle p-6 border border-accent-200">
+                        <div class="w-12 h-12 bg-accent-100 rounded-gentle flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-be-vietnam font-medium text-text-primary mb-2">Văn hóa Việt</h4>
+                        <p class="text-sm text-text-secondary mb-3">Thiền với nhạc truyền thống</p>
+                        <button class="text-accent hover:text-accent-700 text-sm font-medium breathing-transition">Khám phá →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategy Categories -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-be-vietnam font-semibold text-text-primary mb-4">Danh mục chiến lược</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">Khám phá các kỹ thuật được phân loại theo nhu cầu và tình huống cụ thể</p>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="category-filter active px-6 py-3 bg-primary text-white rounded-gentle font-medium breathing-transition" data-category="all">
+                    Tất cả
+                </button>
+                <button class="category-filter px-6 py-3 bg-white text-text-secondary border border-border-light rounded-gentle font-medium hover:bg-primary-50 breathing-transition" data-category="stress">
+                    Căng thẳng học tập
+                </button>
+                <button class="category-filter px-6 py-3 bg-white text-text-secondary border border-border-light rounded-gentle font-medium hover:bg-secondary-50 breathing-transition" data-category="family">
+                    Gia đình
+                </button>
+                <button class="category-filter px-6 py-3 bg-white text-text-secondary border border-border-light rounded-gentle font-medium hover:bg-accent-50 breathing-transition" data-category="social">
+                    Xã hội
+                </button>
+                <button class="category-filter px-6 py-3 bg-white text-text-secondary border border-border-light rounded-gentle font-medium hover:bg-success-50 breathing-transition" data-category="mindfulness">
+                    Chánh niệm
+                </button>
+            </div>
+
+            <!-- Strategy Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="strategy-grid">
+                <!-- Breathing Technique Card -->
+                <div class="strategy-card bg-white rounded-sanctuary shadow-gentle hover:shadow-therapeutic breathing-transition" data-category="stress mindfulness">
+                    <div class="relative overflow-hidden rounded-t-sanctuary">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="Vietnamese nature landscape for breathing exercise" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src='https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                        <div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">
+                            5 phút
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-primary-100 rounded-gentle flex items-center justify-center mr-3">
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span class="text-sm text-success font-medium">Dễ thực hiện</span>
+                        </div>
+                        <h3 class="text-lg font-be-vietnam font-medium text-text-primary mb-2">Kỹ thuật thở 4-7-8</h3>
+                        <p class="text-text-secondary mb-4 text-sm leading-relaxed">Giảm căng thẳng nhanh chóng trước khi thi hoặc khi cảm thấy lo lắng. Kỹ thuật được chứng minh khoa học.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center text-sm text-text-secondary">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                4.8 (127 đánh giá)
+                            </div>
+                            <button class="text-primary hover:text-primary-700 font-medium text-sm breathing-transition">
+                                Học ngay →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Family Communication Card -->
+                <div class="strategy-card bg-white rounded-sanctuary shadow-gentle hover:shadow-therapeutic breathing-transition" data-category="family">
+                    <div class="relative overflow-hidden rounded-t-sanctuary">
+                        <img src="https://images.pexels.com/photos/1128318/pexels-photo-1128318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                             alt="Vietnamese family having conversation" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src='https://images.pixabay.com/photos/2016/11/19/15/32/family-1840458_1280.jpg'; this.onerror=null;">
+                        <div class="absolute top-4 right-4 bg-secondary text-white px-3 py-1 rounded-full text-sm font-medium">
+                            15 phút
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-secondary-100 rounded-gentle flex items-center justify-center mr-3">
+                                <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span class="text-sm text-warning font-medium">Cần luyện tập</span>
+                        </div>
+                        <h3 class="text-lg font-be-vietnam font-medium text-text-primary mb-2">Giao tiếp với gia đình</h3>
+                        <p class="text-text-secondary mb-4 text-sm leading-relaxed">Cách chia sẻ cảm xúc với bố mẹ một cách hiệu quả, tôn trọng văn hóa gia đình Việt Nam.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center text-sm text-text-secondary">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                4.6 (89 đánh giá)
+                            </div>
+                            <button class="text-secondary hover:text-secondary-700 font-medium text-sm breathing-transition">
+                                Học ngay →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Traditional Meditation Card -->
+                <div class="strategy-card bg-white rounded-sanctuary shadow-gentle hover:shadow-therapeutic breathing-transition" data-category="mindfulness">
+                    <div class="relative overflow-hidden rounded-t-sanctuary">
+                        <img src="https://images.unsplash.com/photo-1545389336-cf090694435e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="Traditional Vietnamese meditation space" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src='https://images.pexels.com/photos/3822622/pexels-photo-3822622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                        <div class="absolute top-4 right-4 bg-accent text-white px-3 py-1 rounded-full text-sm font-medium">
+                            10 phút
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-accent-100 rounded-gentle flex items-center justify-center mr-3">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z"/>
+                                </svg>
+                            </div>
+                            <span class="text-sm text-success font-medium">Dễ thực hiện</span>
+                        </div>
+                        <h3 class="text-lg font-be-vietnam font-medium text-text-primary mb-2">Thiền với nhạc truyền thống</h3>
+                        <p class="text-text-secondary mb-4 text-sm leading-relaxed">Kết hợp thiền chánh niệm với âm thanh của đàn tranh và tiếng chim trong rừng Việt Nam.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center text-sm text-text-secondary">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                4.9 (156 đánh giá)
+                            </div>
+                            <button class="text-accent hover:text-accent-700 font-medium text-sm breathing-transition">
+                                Học ngay →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Study Break Technique Card -->
+                <div class="strategy-card bg-white rounded-sanctuary shadow-gentle hover:shadow-therapeutic breathing-transition" data-category="stress">
+                    <div class="relative overflow-hidden rounded-t-sanctuary">
+                        <img src="https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                             alt="Study break techniques for Vietnamese students" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src='https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">
+                            3 phút
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-primary-100 rounded-gentle flex items-center justify-center mr-3">
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span class="text-sm text-success font-medium">Dễ thực hiện</span>
+                        </div>
+                        <h3 class="text-lg font-be-vietnam font-medium text-text-primary mb-2">Nghỉ giải lao hiệu quả</h3>
+                        <p class="text-text-secondary mb-4 text-sm leading-relaxed">Kỹ thuật nghỉ ngơi ngắn giúp tăng cường tập trung và giảm mệt mỏi khi học.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center text-sm text-text-secondary">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                4.7 (203 đánh giá)
+                            </div>
+                            <button class="text-primary hover:text-primary-700 font-medium text-sm breathing-transition">
+                                Học ngay →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Confidence Card -->
+                <div class="strategy-card bg-white rounded-sanctuary shadow-gentle hover:shadow-therapeutic breathing-transition" data-category="social">
+                    <div class="relative overflow-hidden rounded-t-sanctuary">
+                        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="Vietnamese students building social confidence" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src='https://images.pixabay.com/photos/2016/11/19/15/32/group-1840458_1280.jpg'; this.onerror=null;">
+                        <div class="absolute top-4 right-4 bg-secondary text-white px-3 py-1 rounded-full text-sm font-medium">
+                            20 phút
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-secondary-100 rounded-gentle flex items-center justify-center mr-3">
+                                <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                                </svg>
+                            </div>
+                            <span class="text-sm text-warning font-medium">Cần luyện tập</span>
+                        </div>
+                        <h3 class="text-lg font-be-vietnam font-medium text-text-primary mb-2">Xây dựng tự tin xã hội</h3>
+                        <p class="text-text-secondary mb-4 text-sm leading-relaxed">Kỹ năng giao tiếp và xây dựng mối quan hệ tích cực với bạn bè và thầy cô.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center text-sm text-text-secondary">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                4.5 (94 đánh giá)
+                            </div>
+                            <button class="text-secondary hover:text-secondary-700 font-medium text-sm breathing-transition">
+                                Học ngay →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gratitude Practice Card -->
+                <div class="strategy-card bg-white rounded-sanctuary shadow-gentle hover:shadow-therapeutic breathing-transition" data-category="mindfulness">
+                    <div class="relative overflow-hidden rounded-t-sanctuary">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="Gratitude practice in Vietnamese nature" 
+                             class="w-full h-48 object-cover"
+                             onerror="this.src='https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                        <div class="absolute top-4 right-4 bg-success text-white px-3 py-1 rounded-full text-sm font-medium">
+                            7 ngày
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-success-100 rounded-gentle flex items-center justify-center mr-3">
+                                <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span class="text-sm text-success font-medium">Dễ thực hiện</span>
+                        </div>
+                        <h3 class="text-lg font-be-vietnam font-medium text-text-primary mb-2">Thực hành lòng biết ơn</h3>
+                        <p class="text-text-secondary mb-4 text-sm leading-relaxed">Thử thách 7 ngày ghi nhận những điều tích cực trong cuộc sống hàng ngày.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center text-sm text-text-secondary">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                4.8 (178 đánh giá)
+                            </div>
+                            <button class="text-success hover:text-success-700 font-medium text-sm breathing-transition">
+                                Bắt đầu →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wellbeing Quests -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-be-vietnam font-semibold text-text-primary mb-4">Nhiệm vụ sức khỏe tinh thần</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">Tham gia các thử thách vui nhộn để xây dựng thói quen tích cực cho tâm lý</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Active Quest -->
+                <div class="bg-white rounded-sanctuary p-6 shadow-gentle border-l-4 border-primary">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-primary-100 rounded-gentle flex items-center justify-center mr-3">
+                                <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span class="text-sm bg-primary text-white px-2 py-1 rounded-full">Đang thực hiện</span>
+                        </div>
+                        <span class="text-sm text-text-secondary">Ngày 3/7</span>
+                    </div>
+                    <h3 class="text-lg font-be-vietnam font-medium text-text-primary mb-2">Thở sâu mỗi sáng</h3>
+                    <p class="text-text-secondary mb-4 text-sm">Thực hiện 5 phút thở sâu mỗi sáng trước khi bắt đầu ngày học.</p>
+                    <div class="w-full bg-primary-100 rounded-full h-2 mb-4">
+                        <div class="bg-primary h-2 rounded-full" style="width: 43%"></div>
+                    </div>
+                    <button class="w-full bg-primary hover:bg-primary-600 text-white py-2 rounded-gentle breathing-transition">
+                        Hoàn thành hôm nay
+                    </button>
+                </div>
+
+                <!-- Available Quest -->
+                <div class="bg-white rounded-sanctuary p-6 shadow-gentle">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-secondary-100 rounded-gentle flex items-center justify-center mr-3">
+                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span class="text-sm bg-secondary-100 text-secondary px-2 py-1 rounded-full">Sẵn sàng</span>
+                        </div>
+                        <span class="text-sm text-text-secondary">14 ngày</span>
+                    </div>
+                    <h3 class="text-lg font-be-vietnam font-medium text-text-primary mb-2">Nhật ký biết ơn</h3>
+                    <p class="text-text-secondary mb-4 text-sm">Viết 3 điều biết ơn mỗi ngày trong 2 tuần để cải thiện tâm trạng.</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-sm text-text-secondary">Phần thưởng: +50 điểm</span>
+                        <div class="flex items-center text-sm text-warning">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            Trung bình
+                        </div>
+                    </div>
+                    <button class="w-full bg-secondary hover:bg-secondary-600 text-white py-2 rounded-gentle breathing-transition">
+                        Bắt đầu nhiệm vụ
+                    </button>
+                </div>
+
+                <!-- Completed Quest -->
+                <div class="bg-white rounded-sanctuary p-6 shadow-gentle border-l-4 border-success">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-success-100 rounded-gentle flex items-center justify-center mr-3">
+                                <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span class="text-sm bg-success text-white px-2 py-1 rounded-full">Hoàn thành</span>
+                        </div>
+                        <span class="text-sm text-text-secondary">+30 điểm</span>
+                    </div>
+                    <h3 class="text-lg font-be-vietnam font-medium text-text-primary mb-2">Nghỉ ngơi thông minh</h3>
+                    <p class="text-text-secondary mb-4 text-sm">Áp dụng kỹ thuật Pomodoro trong 1 tuần để cải thiện hiệu quả học tập.</p>
+                    <div class="w-full bg-success-100 rounded-full h-2 mb-4">
+                        <div class="bg-success h-2 rounded-full" style="width: 100%"></div>
+                    </div>
+                    <button class="w-full bg-success-100 text-success py-2 rounded-gentle cursor-not-allowed">
+                        ✓ Đã hoàn thành
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Testimonials -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-be-vietnam font-semibold text-text-primary mb-4">Chuyên gia khuyên dùng</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">Những chiến lược được các chuyên gia tâm lý Việt Nam đánh giá cao</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Expert Testimonial 1 -->
+                <div class="bg-white rounded-sanctuary p-8 shadow-gentle">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="Vietnamese mental health professional" 
+                             class="w-16 h-16 rounded-full object-cover mr-4"
+                             onerror="this.src='https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                        <div>
+                            <h4 class="font-be-vietnam font-medium text-text-primary">TS. Nguyễn Thị Lan</h4>
+                            <p class="text-sm text-text-secondary">Chuyên gia tâm lý trẻ em và thanh thiếu niên</p>
+                            <p class="text-xs text-text-secondary">Bệnh viện Nhi Trung ương</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic leading-relaxed">
+                        "Các kỹ thuật thở và thiền chánh niệm trong Bạn Thương được thiết kế rất phù hợp với văn hóa Việt Nam. Tôi thường khuyên các bệnh nhân trẻ sử dụng những công cụ này."
+                    </p>
+                </div>
+
+                <!-- Expert Testimonial 2 -->
+                <div class="bg-white rounded-sanctuary p-8 shadow-gentle">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                             alt="Vietnamese psychology expert" 
+                             class="w-16 h-16 rounded-full object-cover mr-4"
+                             onerror="this.src='https://images.pixabay.com/photos/2016/11/21/12/42/beard-1845166_1280.jpg'; this.onerror=null;">
+                        <div>
+                            <h4 class="font-be-vietnam font-medium text-text-primary">ThS. Trần Minh Đức</h4>
+                            <p class="text-sm text-text-secondary">Chuyên gia tâm lý học đường</p>
+                            <p class="text-xs text-text-secondary">Đại học Sư phạm Hà Nội</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic leading-relaxed">
+                        "Việc gamification các kỹ thuật coping giúp học sinh dễ dàng tiếp cận và duy trì thói quen tích cực. Đây là cách tiếp cận rất hiệu quả cho thế hệ trẻ."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-gradient-to-r from-primary-50 to-secondary-50">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-be-vietnam font-semibold text-text-primary mb-4">
+                Bắt đầu hành trình khám phá bản thân
+            </h2>
+            <p class="text-lg text-text-secondary mb-8 max-w-2xl mx-auto">
+                Mỗi chiến lược coping là một bước tiến nhỏ hướng tới sức khỏe tinh thần tốt hơn. Hãy bắt đầu với những kỹ thuật đơn giản nhất.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="ai_chat_interface_conversational_therapy.html" class="inline-flex items-center px-8 py-3 bg-primary hover:bg-primary-600 text-white font-medium rounded-gentle breathing-transition">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"/>
+                    </svg>
+                    Tư vấn với AI
+                </a>
+                <a href="progress_dashboard_emotional_growth_visualization.html" class="inline-flex items-center px-8 py-3 bg-secondary hover:bg-secondary-600 text-white font-medium rounded-gentle breathing-transition">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    Xem tiến trình
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm0 6c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4zm0 18c-3.314 0-6.22-1.686-7.93-4.25C8.588 20.124 12.294 19 16 19s7.412 1.124 7.93 2.75C22.22 24.314 19.314 26 16 26z"/>
+                        </svg>
+                        <span class="ml-3 text-xl font-be-vietnam font-semibold">Bạn Thương</span>
+                    </div>
+                    <p class="text-gray-300 mb-4 max-w-md">
+                        Sanctuary tâm lý số dành cho học sinh Việt Nam. Nơi an toàn để chia sẻ, học hỏi và phát triển sức khỏe tinh thần.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-be-vietnam font-medium mb-4">Liên kết nhanh</h3>
+                    <ul class="space-y-2">
+                        <li><a href="ai_chat_interface_conversational_therapy.html" class="text-gray-300 hover:text-primary breathing-transition">AI Chat</a></li>
+                        <li><a href="t_m_s_m_ng_private_journal_space.html" class="text-gray-300 hover:text-primary breathing-transition">Tâm sự mỏng</a></li>
+                        <li><a href="h_nh_d_ng_t_i_thought_monsters_gamification.html" class="text-gray-300 hover:text-primary breathing-transition">Hình dáng tôi</a></li>
+                        <li><a href="kh_m_ph_personalized_coping_discovery.html" class="text-gray-300 hover:text-primary breathing-transition">Khám phá</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h3 class="text-lg font-be-vietnam font-medium mb-4">Hỗ trợ</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-primary breathing-transition">Hotline: 1900-xxx-xxx</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary breathing-transition">Email hỗ trợ</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary breathing-transition">Câu hỏi thường gặp</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary breathing-transition">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">© 2025 Bạn Thương. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        function refreshRecommendations() {
+            // Simulate AI recommendation refresh
+            const recommendations = [
+                { title: "Thở sâu 4-7-8", category: "stress", color: "primary" },
+                { title: "Viết nhật ký cảm xúc", category: "mindfulness", color: "secondary" },
+                { title: "Nghe nhạc thiền", category: "cultural", color: "accent" }
+            ];
+            
+            // Add gentle animation feedback
+            const button = event.target.closest('button');
+            button.style.transform = 'rotate(180deg)';
+            setTimeout(() => {
+                button.style.transform = 'rotate(0deg)';
+            }, 300);
+        }
+
+        // Category filtering functionality
+        document.querySelectorAll('.category-filter').forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active state from all buttons
+                document.querySelectorAll('.category-filter').forEach(btn => {
+                    btn.classList.remove('active', 'bg-primary', 'text-white');
+                    btn.classList.add('bg-white', 'text-text-secondary', 'border', 'border-border-light');
+                });
+                
+                // Add active state to clicked button
+                this.classList.add('active', 'bg-primary', 'text-white');
+                this.classList.remove('bg-white', 'text-text-secondary', 'border', 'border-border-light');
+                
+                // Filter strategy cards
+                const category = this.dataset.category;
+                const cards = document.querySelectorAll('.strategy-card');
+                
+                cards.forEach(card => {
+                    if (category === 'all' || card.dataset.category.includes(category)) {
+                        card.style.display = 'block';
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 100);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(-20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Gentle animations on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.strategy-card, .shadow-gentle, .shadow-therapeutic').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Quest interaction
+        document.querySelectorAll('button').forEach(button => {
+            if (button.textContent.includes('Hoàn thành hôm nay') || button.textContent.includes('Bắt đầu nhiệm vụ')) {
+                button.addEventListener('click', function() {
+                    // Add gentle feedback animation
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 150);
+                });
+            }
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+<script id="dhws-elementInspector" src="../public/dhws-web-inspector.js"></script>
+<script id="dhws-errorTracker" src="../public/dhws-error-tracker.js"></script>
+</body>
+</html>

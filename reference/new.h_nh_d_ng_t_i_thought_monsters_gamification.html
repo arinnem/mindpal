@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hình dáng tôi - Quái vật suy nghĩ | Bạn Thương</title>
+    <meta name="description" content="Biến những suy nghĩ tiêu cực thành những quái vật dễ thương và dễ quản lý. Công cụ trị liệu nhận thức hành vi sáng tạo.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body class="bg-background font-inter text-text-primary antialiased">
+    <!-- Crisis Support Button - Always Accessible -->
+    <div class="fixed top-4 right-4 z-50">
+        <button class="bg-primary hover:bg-primary-600 text-white px-4 py-2 rounded-full shadow-therapeutic breathing-transition flex items-center gap-2 text-sm font-medium">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+            </svg>
+            Hỗ trợ khẩn cấp
+        </button>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="bg-surface/80 backdrop-blur-sm border-b border-border-light sticky top-0 z-40">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm0 6c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4zm0 18c-3.314 0-6.22-1.686-7.93-4.25C8.588 20.124 12.294 19 16 19s7.412 1.124 7.93 2.75C22.22 24.314 19.314 26 16 26z"/>
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <h1 class="text-xl font-be-vietnam font-semibold text-text-primary">Bạn Thương</h1>
+                        <p class="text-xs text-text-secondary">Sanctuary tâm lý số</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="homepage_therapeutic_digital_sanctuary.html" class="text-text-secondary hover:text-text-primary hover:bg-surface px-3 py-2 rounded-md text-sm font-medium breathing-transition">Trang chủ</a>
+                        <a href="ai_chat_interface_conversational_therapy.html" class="text-text-secondary hover:text-text-primary hover:bg-surface px-3 py-2 rounded-md text-sm font-medium breathing-transition">AI Chat</a>
+                        <a href="t_m_s_m_ng_private_journal_space.html" class="text-text-secondary hover:text-text-primary hover:bg-surface px-3 py-2 rounded-md text-sm font-medium breathing-transition">Tâm sự</a>
+                        <a href="h_nh_d_ng_t_i_thought_monsters_gamification.html" class="bg-primary text-white px-3 py-2 rounded-md text-sm font-medium">Hình dáng tôi</a>
+                        <a href="kh_m_ph_personalized_coping_discovery.html" class="text-text-secondary hover:text-text-primary hover:bg-surface px-3 py-2 rounded-md text-sm font-medium breathing-transition">Khám phá</a>
+                        <a href="progress_dashboard_emotional_growth_visualization.html" class="text-text-secondary hover:text-text-primary hover:bg-surface px-3 py-2 rounded-md text-sm font-medium breathing-transition">Tiến trình</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="bg-surface inline-flex items-center justify-center p-2 rounded-md text-text-secondary hover:text-text-primary hover:bg-primary-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary" onclick="toggleMobileMenu()">
+                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-surface border-t border-border-light">
+                <a href="homepage_therapeutic_digital_sanctuary.html" class="text-text-secondary hover:text-text-primary hover:bg-primary-50 block px-3 py-2 rounded-md text-base font-medium">Trang chủ</a>
+                <a href="ai_chat_interface_conversational_therapy.html" class="text-text-secondary hover:text-text-primary hover:bg-primary-50 block px-3 py-2 rounded-md text-base font-medium">AI Chat</a>
+                <a href="t_m_s_m_ng_private_journal_space.html" class="text-text-secondary hover:text-text-primary hover:bg-primary-50 block px-3 py-2 rounded-md text-base font-medium">Tâm sự</a>
+                <a href="h_nh_d_ng_t_i_thought_monsters_gamification.html" class="bg-primary text-white block px-3 py-2 rounded-md text-base font-medium">Hình dáng tôi</a>
+                <a href="kh_m_ph_personalized_coping_discovery.html" class="text-text-secondary hover:text-text-primary hover:bg-primary-50 block px-3 py-2 rounded-md text-base font-medium">Khám phá</a>
+                <a href="progress_dashboard_emotional_growth_visualization.html" class="text-text-secondary hover:text-text-primary hover:bg-primary-50 block px-3 py-2 rounded-md text-base font-medium">Tiến trình</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-accent-50 to-primary-50">
+        <div class="absolute inset-0 bg-gradient-to-r from-accent-100/30 to-primary-100/30"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+            <div class="text-center">
+                <div class="mb-6">
+                    <div class="inline-flex items-center justify-center w-16 h-16 bg-accent-100 rounded-sanctuary mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                </div>
+                <h1 class="text-4xl lg:text-5xl font-be-vietnam font-semibold text-text-primary mb-6 animate-therapeutic-fade">
+                    Hình dáng tôi
+                </h1>
+                <p class="text-lg lg:text-xl text-text-secondary mb-8 max-w-3xl mx-auto leading-relaxed">
+                    Biến những suy nghĩ khó khăn thành những quái vật dễ thương. Học cách chăm sóc và hiểu rõ cảm xúc của bạn thông qua trò chơi.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button onclick="openCreateMonster()" class="inline-flex items-center px-8 py-3 bg-accent hover:bg-accent-600 text-white font-medium rounded-gentle breathing-transition">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd"/>
+                        </svg>
+                        Tạo quái vật mới
+                    </button>
+                    <button onclick="showMonsterGuide()" class="inline-flex items-center px-8 py-3 bg-secondary hover:bg-secondary-600 text-white font-medium rounded-gentle breathing-transition">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                        </svg>
+                        Hướng dẫn
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Monster Collection -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center mb-8">
+                <div>
+                    <h2 class="text-3xl font-be-vietnam font-semibold text-text-primary mb-2">Bộ sưu tập quái vật</h2>
+                    <p class="text-text-secondary">Những người bạn nhỏ đang đồng hành cùng bạn</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="bg-white rounded-gentle px-4 py-2 shadow-gentle">
+                        <span class="text-sm text-text-secondary">Tổng cộng:</span>
+                        <span class="font-medium text-accent ml-1" id="monster-count">3</span>
+                    </div>
+                    <button onclick="filterMonsters('all')" class="filter-btn active px-4 py-2 rounded-gentle text-sm font-medium breathing-transition">Tất cả</button>
+                    <button onclick="filterMonsters('active')" class="filter-btn px-4 py-2 rounded-gentle text-sm font-medium breathing-transition">Đang chăm sóc</button>
+                    <button onclick="filterMonsters('graduated')" class="filter-btn px-4 py-2 rounded-gentle text-sm font-medium breathing-transition">Đã tốt nghiệp</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="monster-grid">
+                <!-- Monster Card 1 - Active -->
+                <div class="monster-card bg-white rounded-sanctuary p-6 shadow-gentle hover:shadow-therapeutic breathing-transition" data-status="active">
+                    <div class="text-center mb-4">
+                        <div class="relative inline-block">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                                 alt="Quái vật lo lắng" 
+                                 class="w-24 h-24 rounded-full object-cover mx-auto border-4 border-accent-200"
+                                 onerror="this.src='https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;">
+                            <div class="absolute -bottom-1 -right-1 w-6 h-6 bg-warning rounded-full flex items-center justify-center">
+                                <span class="text-xs">😰</span>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-be-vietnam font-medium text-text-primary mt-3 mb-1">Gấu Lo Lắng</h3>
+                        <p class="text-sm text-text-secondary">Sinh ngày 15/01/2025</p>
+                    </div>
+
+                    <div class="space-y-3 mb-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-text-secondary">Mức độ hạnh phúc</span>
+                            <div class="flex items-center gap-1">
+                                <div class="w-16 h-2 bg-border-light rounded-full overflow-hidden">
+                                    <div class="w-3/4 h-full bg-warning rounded-full"></div>
+                                </div>
+                                <span class="text-xs text-text-secondary">75%</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-text-secondary">Sức khỏe tinh thần</span>
+                            <div class="flex items-center gap-1">
+                                <div class="w-16 h-2 bg-border-light rounded-full overflow-hidden">
+                                    <div class="w-2/3 h-full bg-secondary rounded-full"></div>
+                                </div>
+                                <span class="text-xs text-text-secondary">67%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-warning-50 rounded-gentle p-3 mb-4">
+                        <p class="text-sm text-text-secondary italic">
+                            "Mình đang học cách thở sâu khi cảm thấy lo lắng về bài kiểm tra."
+                        </p>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <button onclick="careForMonster('gau-lo-lang')" class="flex-1 bg-accent hover:bg-accent-600 text-white py-2 px-4 rounded-gentle text-sm font-medium breathing-transition">
+                            Chăm sóc
+                        </button>
+                        <button onclick="viewMonsterDetails('gau-lo-lang')" class="bg-surface hover:bg-border-light text-text-secondary py-2 px-4 rounded-gentle text-sm font-medium breathing-transition">
+                            Chi tiết
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Monster Card 2 - Active -->
+                <div class="monster-card bg-white rounded-sanctuary p-6 shadow-gentle hover:shadow-therapeutic breathing-transition" data-status="active">
+                    <div class="text-center mb-4">
+                        <div class="relative inline-block">
+                            <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                                 alt="Quái vật buồn bã" 
+                                 class="w-24 h-24 rounded-full object-cover mx-auto border-4 border-secondary-200"
+                                 onerror="this.src='https://images.pixabay.com/photos/2014/04/13/20/49/cat-323262_1280.jpg'; this.onerror=null;">
+                            <div class="absolute -bottom-1 -right-1 w-6 h-6 bg-secondary rounded-full flex items-center justify-center">
+                                <span class="text-xs">😢</span>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-be-vietnam font-medium text-text-primary mt-3 mb-1">Mèo Buồn Bã</h3>
+                        <p class="text-sm text-text-secondary">Sinh ngày 10/01/2025</p>
+                    </div>
+
+                    <div class="space-y-3 mb-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-text-secondary">Mức độ hạnh phúc</span>
+                            <div class="flex items-center gap-1">
+                                <div class="w-16 h-2 bg-border-light rounded-full overflow-hidden">
+                                    <div class="w-1/2 h-full bg-secondary rounded-full"></div>
+                                </div>
+                                <span class="text-xs text-text-secondary">50%</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-text-secondary">Sức khỏe tinh thần</span>
+                            <div class="flex items-center gap-1">
+                                <div class="w-16 h-2 bg-border-light rounded-full overflow-hidden">
+                                    <div class="w-3/5 h-full bg-secondary rounded-full"></div>
+                                </div>
+                                <span class="text-xs text-text-secondary">60%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-secondary-50 rounded-gentle p-3 mb-4">
+                        <p class="text-sm text-text-secondary italic">
+                            "Mình đang tập viết nhật ký để hiểu rõ cảm xúc của bản thân hơn."
+                        </p>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <button onclick="careForMonster('meo-buon-ba')" class="flex-1 bg-secondary hover:bg-secondary-600 text-white py-2 px-4 rounded-gentle text-sm font-medium breathing-transition">
+                            Chăm sóc
+                        </button>
+                        <button onclick="viewMonsterDetails('meo-buon-ba')" class="bg-surface hover:bg-border-light text-text-secondary py-2 px-4 rounded-gentle text-sm font-medium breathing-transition">
+                            Chi tiết
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Monster Card 3 - Graduated -->
+                <div class="monster-card bg-white rounded-sanctuary p-6 shadow-gentle hover:shadow-therapeutic breathing-transition" data-status="graduated">
+                    <div class="text-center mb-4">
+                        <div class="relative inline-block">
+                            <img src="https://images.pixabay.com/photos/2017/07/25/01/22/cat-2536662_1280.jpg" 
+                                 alt="Quái vật đã tốt nghiệp" 
+                                 class="w-24 h-24 rounded-full object-cover mx-auto border-4 border-success-200"
+                                 onerror="this.src='https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=2943&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                            <div class="absolute -bottom-1 -right-1 w-6 h-6 bg-success rounded-full flex items-center justify-center">
+                                <span class="text-xs">🎓</span>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-be-vietnam font-medium text-text-primary mt-3 mb-1">Thỏ Tự Tin</h3>
+                        <p class="text-sm text-text-secondary">Tốt nghiệp ngày 05/01/2025</p>
+                    </div>
+
+                    <div class="space-y-3 mb-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-text-secondary">Mức độ hạnh phúc</span>
+                            <div class="flex items-center gap-1">
+                                <div class="w-16 h-2 bg-border-light rounded-full overflow-hidden">
+                                    <div class="w-full h-full bg-success rounded-full"></div>
+                                </div>
+                                <span class="text-xs text-text-secondary">100%</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-text-secondary">Sức khỏe tinh thần</span>
+                            <div class="flex items-center gap-1">
+                                <div class="w-16 h-2 bg-border-light rounded-full overflow-hidden">
+                                    <div class="w-full h-full bg-success rounded-full"></div>
+                                </div>
+                                <span class="text-xs text-text-secondary">100%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-success-50 rounded-gentle p-3 mb-4">
+                        <p class="text-sm text-text-secondary italic">
+                            "Mình đã học được cách yêu thương bản thân và tự tin hơn!"
+                        </p>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <button class="flex-1 bg-success text-white py-2 px-4 rounded-gentle text-sm font-medium cursor-not-allowed opacity-75">
+                            Đã tốt nghiệp
+                        </button>
+                        <button onclick="viewMonsterDetails('tho-tu-tin')" class="bg-surface hover:bg-border-light text-text-secondary py-2 px-4 rounded-gentle text-sm font-medium breathing-transition">
+                            Kỷ niệm
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-be-vietnam font-semibold text-text-primary mb-4">Hoạt động hàng ngày</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">Những việc nhỏ để chăm sóc quái vật và bản thân mỗi ngày</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Daily Check-in -->
+                <div class="bg-white rounded-sanctuary p-6 shadow-gentle hover:shadow-therapeutic breathing-transition text-center">
+                    <div class="w-12 h-12 bg-primary-100 rounded-gentle flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-be-vietnam font-medium text-text-primary mb-2">Điểm danh hàng ngày</h3>
+                    <p class="text-text-secondary mb-4 text-sm">Chia sẻ cảm xúc với quái vật của bạn</p>
+                    <button onclick="dailyCheckIn()" class="w-full bg-primary hover:bg-primary-600 text-white py-2 px-4 rounded-gentle text-sm font-medium breathing-transition">
+                        Điểm danh ngay
+                    </button>
+                </div>
+
+                <!-- Monster Care -->
+                <div class="bg-white rounded-sanctuary p-6 shadow-gentle hover:shadow-therapeutic breathing-transition text-center">
+                    <div class="w-12 h-12 bg-accent-100 rounded-gentle flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-be-vietnam font-medium text-text-primary mb-2">Chăm sóc quái vật</h3>
+                    <p class="text-text-secondary mb-4 text-sm">Thực hiện các hoạt động trị liệu</p>
+                    <button onclick="showCareActivities()" class="w-full bg-accent hover:bg-accent-600 text-white py-2 px-4 rounded-gentle text-sm font-medium breathing-transition">
+                        Bắt đầu chăm sóc
+                    </button>
+                </div>
+
+                <!-- Progress Review -->
+                <div class="bg-white rounded-sanctuary p-6 shadow-gentle hover:shadow-therapeutic breathing-transition text-center">
+                    <div class="w-12 h-12 bg-secondary-100 rounded-gentle flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-be-vietnam font-medium text-text-primary mb-2">Xem tiến trình</h3>
+                    <p class="text-text-secondary mb-4 text-sm">Theo dõi sự phát triển của quái vật</p>
+                    <a href="progress_dashboard_emotional_growth_visualization.html" class="block w-full bg-secondary hover:bg-secondary-600 text-white py-2 px-4 rounded-gentle text-sm font-medium breathing-transition">
+                        Xem báo cáo
+                    </a>
+                </div>
+
+                <!-- Share Story -->
+                <div class="bg-white rounded-sanctuary p-6 shadow-gentle hover:shadow-therapeutic breathing-transition text-center">
+                    <div class="w-12 h-12 bg-success-100 rounded-gentle flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-be-vietnam font-medium text-text-primary mb-2">Chia sẻ câu chuyện</h3>
+                    <p class="text-text-secondary mb-4 text-sm">Truyền cảm hứng cho bạn bè khác</p>
+                    <button onclick="shareStory()" class="w-full bg-success hover:bg-success-600 text-white py-2 px-4 rounded-gentle text-sm font-medium breathing-transition">
+                        Chia sẻ ẩn danh
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Create Monster Modal -->
+    <div id="create-monster-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-sanctuary max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6 border-b border-border-light">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-xl font-be-vietnam font-semibold text-text-primary">Tạo quái vật mới</h3>
+                    <button onclick="closeCreateMonster()" class="text-text-secondary hover:text-text-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="p-6">
+                <form id="create-monster-form" class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-text-primary mb-2">Bạn đang cảm thấy thế nào?</label>
+                        <textarea class="w-full px-4 py-3 border border-border rounded-gentle focus:ring-2 focus:ring-primary focus:border-transparent resize-none" 
+                                  rows="4" 
+                                  placeholder="Ví dụ: Mình cảm thấy lo lắng về bài kiểm tra ngày mai. Mình sợ không làm được bài tốt và bố mẹ sẽ thất vọng..."
+                                  required></textarea>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-text-primary mb-2">Đặt tên cho quái vật của bạn</label>
+                        <input type="text" 
+                               class="w-full px-4 py-3 border border-border rounded-gentle focus:ring-2 focus:ring-primary focus:border-transparent" 
+                               placeholder="Ví dụ: Gấu Lo Lắng, Mèo Buồn Bã..."
+                               required>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-text-primary mb-2">Chọn loại quái vật</label>
+                        <div class="grid grid-cols-3 gap-3">
+                            <label class="cursor-pointer">
+                                <input type="radio" name="monster-type" value="anxiety" class="sr-only">
+                                <div class="monster-type-option border-2 border-border rounded-gentle p-4 text-center hover:border-warning breathing-transition">
+                                    <div class="text-2xl mb-2">🐻</div>
+                                    <span class="text-sm text-text-secondary">Lo lắng</span>
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="monster-type" value="sadness" class="sr-only">
+                                <div class="monster-type-option border-2 border-border rounded-gentle p-4 text-center hover:border-secondary breathing-transition">
+                                    <div class="text-2xl mb-2">🐱</div>
+                                    <span class="text-sm text-text-secondary">Buồn bã</span>
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="monster-type" value="anger" class="sr-only">
+                                <div class="monster-type-option border-2 border-border rounded-gentle p-4 text-center hover:border-error breathing-transition">
+                                    <div class="text-2xl mb-2">🦁</div>
+                                    <span class="text-sm text-text-secondary">Tức giận</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-4 pt-4">
+                        <button type="button" onclick="closeCreateMonster()" class="flex-1 bg-surface hover:bg-border-light text-text-secondary py-3 px-6 rounded-gentle font-medium breathing-transition">
+                            Hủy bỏ
+                        </button>
+                        <button type="submit" class="flex-1 bg-accent hover:bg-accent-600 text-white py-3 px-6 rounded-gentle font-medium breathing-transition">
+                            Tạo quái vật
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm0 6c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4zm0 18c-3.314 0-6.22-1.686-7.93-4.25C8.588 20.124 12.294 19 16 19s7.412 1.124 7.93 2.75C22.22 24.314 19.314 26 16 26z"/>
+                        </svg>
+                        <span class="ml-3 text-xl font-be-vietnam font-semibold">Bạn Thương</span>
+                    </div>
+                    <p class="text-gray-300 mb-4 max-w-md">
+                        Sanctuary tâm lý số dành cho học sinh Việt Nam. Nơi an toàn để chia sẻ, học hỏi và phát triển sức khỏe tinh thần.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-be-vietnam font-medium mb-4">Liên kết nhanh</h3>
+                    <ul class="space-y-2">
+                        <li><a href="ai_chat_interface_conversational_therapy.html" class="text-gray-300 hover:text-primary breathing-transition">AI Chat</a></li>
+                        <li><a href="t_m_s_m_ng_private_journal_space.html" class="text-gray-300 hover:text-primary breathing-transition">Tâm sự mỏng</a></li>
+                        <li><a href="h_nh_d_ng_t_i_thought_monsters_gamification.html" class="text-gray-300 hover:text-primary breathing-transition">Hình dáng tôi</a></li>
+                        <li><a href="kh_m_ph_personalized_coping_discovery.html" class="text-gray-300 hover:text-primary breathing-transition">Khám phá</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h3 class="text-lg font-be-vietnam font-medium mb-4">Hỗ trợ</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-primary breathing-transition">Hotline: 1900-xxx-xxx</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary breathing-transition">Email hỗ trợ</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary breathing-transition">Câu hỏi thường gặp</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary breathing-transition">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">© 2025 Bạn Thương. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        function openCreateMonster() {
+            document.getElementById('create-monster-modal').classList.remove('hidden');
+        }
+
+        function closeCreateMonster() {
+            document.getElementById('create-monster-modal').classList.add('hidden');
+        }
+
+        function filterMonsters(status) {
+            const cards = document.querySelectorAll('.monster-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            // Update button states
+            buttons.forEach(btn => btn.classList.remove('active', 'bg-primary', 'text-white'));
+            event.target.classList.add('active', 'bg-primary', 'text-white');
+            
+            // Filter cards
+            cards.forEach(card => {
+                if (status === 'all' || card.dataset.status === status) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            // Update count
+            const visibleCards = document.querySelectorAll('.monster-card[style="display: block"], .monster-card:not([style])');
+            document.getElementById('monster-count').textContent = status === 'all' ? '3' : visibleCards.length;
+        }
+
+        function careForMonster(monsterId) {
+            // Simulate care activity
+            alert(`Bạn đã chăm sóc ${monsterId}! Quái vật của bạn cảm thấy hạnh phúc hơn.`);
+        }
+
+        function viewMonsterDetails(monsterId) {
+            // Show monster details
+            alert(`Xem chi tiết về ${monsterId}`);
+        }
+
+        function dailyCheckIn() {
+            alert('Điểm danh thành công! Hãy chia sẻ cảm xúc hôm nay với quái vật của bạn.');
+        }
+
+        function showCareActivities() {
+            alert('Đang mở danh sách hoạt động chăm sóc...');
+        }
+
+        function shareStory() {
+            alert('Cảm ơn bạn đã muốn chia sẻ câu chuyện! Tính năng này sẽ sớm có.');
+        }
+
+        function showMonsterGuide() {
+            alert('Hướng dẫn: Tạo quái vật từ cảm xúc khó khăn, chăm sóc chúng bằng các hoạt động trị liệu, và xem chúng phát triển cùng với bạn!');
+        }
+
+        // Monster type selection
+        document.addEventListener('DOMContentLoaded', function() {
+            const monsterTypeOptions = document.querySelectorAll('.monster-type-option');
+            monsterTypeOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    // Remove active state from all options
+                    monsterTypeOptions.forEach(opt => {
+                        opt.classList.remove('border-primary', 'bg-primary-50');
+                        opt.classList.add('border-border');
+                    });
+                    
+                    // Add active state to clicked option
+                    this.classList.remove('border-border');
+                    this.classList.add('border-primary', 'bg-primary-50');
+                    
+                    // Check the radio button
+                    this.parentElement.querySelector('input[type="radio"]').checked = true;
+                });
+            });
+        });
+
+        // Form submission
+        document.getElementById('create-monster-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simulate monster creation
+            setTimeout(() => {
+                alert('Quái vật mới đã được tạo thành công! Hãy bắt đầu chăm sóc nó.');
+                closeCreateMonster();
+                
+                // Refresh the page to show new monster (in real app, this would update the grid)
+                location.reload();
+            }, 1000);
+        });
+
+        // Initialize filter buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            const firstFilterBtn = document.querySelector('.filter-btn');
+            if (firstFilterBtn) {
+                firstFilterBtn.classList.add('bg-primary', 'text-white');
+            }
+        });
+
+        // Gentle animations on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.monster-card, .shadow-gentle').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+<script id="dhws-elementInspector" src="../public/dhws-web-inspector.js"></script>
+<script id="dhws-errorTracker" src="../public/dhws-error-tracker.js"></script>
+</body>
+</html>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tâm sự mỏng - Không gian riêng tư | Bạn Thương</title>
+    <meta name="description" content="Không gian riêng tư để bạn ghi lại cảm xúc và suy nghĩ hàng ngày với bảo mật tuyệt đối.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body class="bg-background font-inter text-text-primary antialiased">
+    <!-- Crisis Support Button - Always Accessible -->
+    <div class="fixed top-4 right-4 z-50">
+        <button class="bg-primary hover:bg-primary-600 text-white px-4 py-2 rounded-full shadow-therapeutic breathing-transition flex items-center gap-2 text-sm font-medium">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+            </svg>
+            Hỗ trợ khẩn cấp
+        </button>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="bg-surface/80 backdrop-blur-sm border-b border-border-light sticky top-0 z-40">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm0 6c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4zm0 18c-3.314 0-6.22-1.686-7.93-4.25C8.588 20.124 12.294 19 16 19s7.412 1.124 7.93 2.75C22.22 24.314 19.314 26 16 26z"/>
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <h1 class="text-xl font-be-vietnam font-semibold text-text-primary">Bạn Thương</h1>
+                        <p class="text-xs text-text-secondary">Sanctuary tâm lý số</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="homepage_therapeutic_digital_sanctuary.html" class="text-text-secondary hover:text-text-primary hover:bg-surface px-3 py-2 rounded-md text-sm font-medium breathing-transition">Trang chủ</a>
+                        <a href="ai_chat_interface_conversational_therapy.html" class="text-text-secondary hover:text-text-primary hover:bg-surface px-3 py-2 rounded-md text-sm font-medium breathing-transition">AI Chat</a>
+                        <a href="t_m_s_m_ng_private_journal_space.html" class="bg-primary text-white px-3 py-2 rounded-md text-sm font-medium">Tâm sự</a>
+                        <a href="progress_dashboard_emotional_growth_visualization.html" class="text-text-secondary hover:text-text-primary hover:bg-surface px-3 py-2 rounded-md text-sm font-medium breathing-transition">Tiến trình</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="bg-surface inline-flex items-center justify-center p-2 rounded-md text-text-secondary hover:text-text-primary hover:bg-primary-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary" onclick="toggleMobileMenu()">
+                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-surface border-t border-border-light">
+                <a href="homepage_therapeutic_digital_sanctuary.html" class="text-text-secondary hover:text-text-primary hover:bg-primary-50 block px-3 py-2 rounded-md text-base font-medium">Trang chủ</a>
+                <a href="ai_chat_interface_conversational_therapy.html" class="text-text-secondary hover:text-text-primary hover:bg-primary-50 block px-3 py-2 rounded-md text-base font-medium">AI Chat</a>
+                <a href="t_m_s_m_ng_private_journal_space.html" class="bg-primary text-white block px-3 py-2 rounded-md text-base font-medium">Tâm sự mỏng</a>
+                <a href="h_nh_d_ng_t_i_thought_monsters_gamification.html" class="text-text-secondary hover:text-text-primary hover:bg-primary-50 block px-3 py-2 rounded-md text-base font-medium">Hình dáng tôi</a>
+                <a href="kh_m_ph_personalized_coping_discovery.html" class="text-text-secondary hover:text-text-primary hover:bg-primary-50 block px-3 py-2 rounded-md text-base font-medium">Khám phá</a>
+                <a href="progress_dashboard_emotional_growth_visualization.html" class="text-text-secondary hover:text-text-primary hover:bg-primary-50 block px-3 py-2 rounded-md text-base font-medium">Tiến trình</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Privacy Assurance -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-background to-surface">
+        <div class="absolute inset-0 bg-gradient-to-r from-secondary-50/30 to-accent-50/30"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl lg:text-5xl font-be-vietnam font-semibold text-text-primary mb-4 animate-therapeutic-fade">
+                    <span class="text-secondary">Tâm sự mỏng</span>
+                </h1>
+                <p class="text-lg lg:text-xl text-text-secondary mb-6 max-w-3xl mx-auto leading-relaxed">
+                    Không gian riêng tư và an toàn để bạn ghi lại những cảm xúc, suy nghĩ hàng ngày. Mọi thứ bạn viết đều được bảo mật tuyệt đối.
+                </p>
+
+                <!-- Privacy Assurance -->
+                <div class="bg-white/80 backdrop-blur-sm rounded-sanctuary p-6 shadow-gentle max-w-2xl mx-auto mb-8">
+                    <div class="flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <h3 class="text-lg font-be-vietnam font-medium text-text-primary">Bảo mật tuyệt đối</h3>
+                    </div>
+                    <p class="text-text-secondary text-sm leading-relaxed">
+                        Tất cả những gì bạn viết được mã hóa end-to-end. Chỉ có bạn mới có thể đọc được nội dung của mình.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Journal Interface -->
+    <section class="py-8 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Journal Writing Area -->
+                <div class="lg:col-span-2">
+                    <!-- AI Prompt Suggestions -->
+                    <div class="bg-white rounded-sanctuary p-6 shadow-gentle mb-6">
+                        <h3 class="text-lg font-be-vietnam font-medium text-text-primary mb-4 flex items-center">
+                            <svg class="w-5 h-5 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            Gợi ý viết hôm nay
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <button class="prompt-btn text-left p-4 rounded-gentle border-2 border-border-light hover:border-secondary breathing-transition bg-secondary-50/50" data-prompt="Hôm nay mình cảm thấy...">
+                                <p class="text-sm text-text-secondary mb-2">Cảm xúc hôm nay</p>
+                                <p class="font-medium text-text-primary">"Hôm nay mình cảm thấy..."</p>
+                            </button>
+                            <button class="prompt-btn text-left p-4 rounded-gentle border-2 border-border-light hover:border-accent breathing-transition bg-accent-50/50" data-prompt="Điều mình biết ơn nhất hôm nay là...">
+                                <p class="text-sm text-text-secondary mb-2">Lòng biết ơn</p>
+                                <p class="font-medium text-text-primary">"Điều mình biết ơn nhất..."</p>
+                            </button>
+                            <button class="prompt-btn text-left p-4 rounded-gentle border-2 border-border-light hover:border-primary breathing-transition bg-primary-50/50" data-prompt="Thử thách lớn nhất của mình hôm nay là...">
+                                <p class="text-sm text-text-secondary mb-2">Thử thách</p>
+                                <p class="font-medium text-text-primary">"Thử thách lớn nhất..."</p>
+                            </button>
+                            <button class="prompt-btn text-left p-4 rounded-gentle border-2 border-border-light hover:border-success breathing-transition bg-success-50/50" data-prompt="Mình tự hào về bản thân vì...">
+                                <p class="text-sm text-text-secondary mb-2">Tự hào</p>
+                                <p class="font-medium text-text-primary">"Mình tự hào vì..."</p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Writing Interface -->
+                    <div class="bg-white rounded-sanctuary p-6 shadow-gentle">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-be-vietnam font-medium text-text-primary">Viết tâm sự</h3>
+                            <div class="flex items-center gap-2">
+                                <!-- Background Theme Selector -->
+                                <div class="flex items-center gap-2">
+                                    <span class="text-sm text-text-secondary">Nền:</span>
+                                    <button class="theme-btn w-6 h-6 rounded-full bg-gradient-to-br from-blue-100 to-blue-200 border-2 border-transparent hover:border-primary breathing-transition" data-theme="sky"></button>
+                                    <button class="theme-btn w-6 h-6 rounded-full bg-gradient-to-br from-green-100 to-green-200 border-2 border-transparent hover:border-primary breathing-transition" data-theme="nature"></button>
+                                    <button class="theme-btn w-6 h-6 rounded-full bg-gradient-to-br from-pink-100 to-pink-200 border-2 border-transparent hover:border-primary breathing-transition" data-theme="sunset"></button>
+                                    <button class="theme-btn w-6 h-6 rounded-full bg-gradient-to-br from-purple-100 to-purple-200 border-2 border-transparent hover:border-primary breathing-transition" data-theme="night"></button>
+                                </div>
+                                <!-- Mood Selector -->
+                                <select class="text-sm border border-border-light rounded-gentle px-2 py-1 bg-white text-text-secondary">
+                                    <option>😊 Vui vẻ</option>
+                                    <option>😌 Bình thản</option>
+                                    <option>😔 Buồn</option>
+                                    <option>😰 Lo lắng</option>
+                                    <option>😴 Mệt mỏi</option>
+                                    <option>🤔 Suy tư</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Writing Area -->
+                        <div class="writing-area bg-gradient-to-br from-background to-surface rounded-gentle p-6 mb-4 min-h-96 border border-border-light" id="writing-area">
+                            <textarea 
+                                id="journal-textarea"
+                                class="w-full h-80 bg-transparent border-none outline-none resize-none text-text-primary placeholder-text-secondary leading-relaxed font-quicksand"
+                                placeholder="Hôm nay bạn muốn chia sẻ điều gì? Hãy viết thoải mái, đây là không gian riêng của bạn..."
+                                style="font-family: 'Quicksand', cursive; font-size: 16px; line-height: 1.8;"
+                            ></textarea>
+                        </div>
+
+                        <!-- Writing Tools -->
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-4">
+                                <button class="flex items-center gap-2 text-text-secondary hover:text-primary breathing-transition">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-sm">Lưu nháp</span>
+                                </button>
+                                <button class="flex items-center gap-2 text-text-secondary hover:text-accent breathing-transition">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-sm">Tạo quái vật</span>
+                                </button>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-xs text-text-secondary" id="word-count">0 từ</span>
+                                <button class="bg-primary hover:bg-primary-600 text-white px-6 py-2 rounded-gentle breathing-transition font-medium">
+                                    Lưu bài viết
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Breathing Exercise Integration -->
+                    <div class="bg-gradient-to-r from-secondary-50 to-accent-50 rounded-sanctuary p-6 shadow-gentle mt-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-be-vietnam font-medium text-text-primary flex items-center">
+                                <svg class="w-5 h-5 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/>
+                                </svg>
+                                Thở thư giãn trước khi viết
+                            </h3>
+                            <button id="breathing-toggle" class="text-secondary hover:text-secondary-700 breathing-transition">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="breathing-exercise" class="hidden text-center">
+                            <div class="breathing-circle w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-secondary to-accent opacity-70 animate-breathing"></div>
+                            <p class="text-text-secondary text-sm">Hít vào... Thở ra... Để tâm hồn bình yên</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="lg:col-span-1">
+                    <!-- Recent Entries -->
+                    <div class="bg-white rounded-sanctuary p-6 shadow-gentle mb-6">
+                        <h3 class="text-lg font-be-vietnam font-medium text-text-primary mb-4 flex items-center">
+                            <svg class="w-5 h-5 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                                <path fill-rule="evenodd" d="M4 5a2 2 0 012-2v1a2 2 0 002 2h8a2 2 0 002-2V3a2 2 0 012 2v6h-3a3 3 0 00-3 3v3H6a2 2 0 01-2-2V5zm11 14h3l-3-3v3z" clip-rule="evenodd"/>
+                            </svg>
+                            Bài viết gần đây
+                        </h3>
+                        <div class="space-y-3">
+                            <!-- Entry 1 -->
+                            <div class="entry-card p-4 rounded-gentle border border-border-light hover:shadow-gentle breathing-transition cursor-pointer bg-gradient-to-br from-primary-50 to-accent-50">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-xs text-text-secondary">Hôm qua</span>
+                                    <span class="text-lg">😊</span>
+                                </div>
+                                <p class="text-sm text-text-primary font-medium mb-1">Ngày thi cuối kỳ</p>
+                                <p class="text-xs text-text-secondary line-clamp-2">Hôm nay mình cảm thấy lo lắng về kỳ thi sắp tới, nhưng mình đã chuẩn bị khá kỹ...</p>
+                            </div>
+
+                            <!-- Entry 2 -->
+                            <div class="entry-card p-4 rounded-gentle border border-border-light hover:shadow-gentle breathing-transition cursor-pointer bg-gradient-to-br from-secondary-50 to-success-50">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-xs text-text-secondary">3 ngày trước</span>
+                                    <span class="text-lg">😌</span>
+                                </div>
+                                <p class="text-sm text-text-primary font-medium mb-1">Cuối tuần thư giãn</p>
+                                <p class="text-xs text-text-secondary line-clamp-2">Cuối tuần này mình đã dành thời gian cho gia đình và bạn bè. Cảm giác thật tuyệt...</p>
+                            </div>
+
+                            <!-- Entry 3 -->
+                            <div class="entry-card p-4 rounded-gentle border border-border-light hover:shadow-gentle breathing-transition cursor-pointer bg-gradient-to-br from-accent-50 to-warning-50">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-xs text-text-secondary">1 tuần trước</span>
+                                    <span class="text-lg">🤔</span>
+                                </div>
+                                <p class="text-sm text-text-primary font-medium mb-1">Suy nghĩ về tương lai</p>
+                                <p class="text-xs text-text-secondary line-clamp-2">Mình đang băn khoăn về việc chọn ngành học sau này. Có quá nhiều lựa chọn...</p>
+                            </div>
+                        </div>
+                        <button class="w-full mt-4 text-primary hover:text-primary-700 text-sm font-medium breathing-transition">
+                            Xem tất cả bài viết
+                        </button>
+                    </div>
+
+                    <!-- Emotional Progress -->
+                    <div class="bg-white rounded-sanctuary p-6 shadow-gentle mb-6">
+                        <h3 class="text-lg font-be-vietnam font-medium text-text-primary mb-4 flex items-center">
+                            <svg class="w-5 h-5 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Tiến trình cảm xúc
+                        </h3>
+                        
+                        <!-- Mood Chart -->
+                        <div class="mb-4">
+                            <p class="text-sm text-text-secondary mb-2">Cảm xúc 7 ngày qua</p>
+                            <div class="flex items-end justify-between h-20 bg-gradient-to-t from-success-50 to-transparent rounded-gentle p-2">
+                                <div class="flex flex-col items-center">
+                                    <div class="w-2 bg-success h-12 rounded-full mb-1"></div>
+                                    <span class="text-xs text-text-secondary">T2</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-2 bg-warning h-8 rounded-full mb-1"></div>
+                                    <span class="text-xs text-text-secondary">T3</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-2 bg-success h-14 rounded-full mb-1"></div>
+                                    <span class="text-xs text-text-secondary">T4</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-2 bg-primary h-10 rounded-full mb-1"></div>
+                                    <span class="text-xs text-text-secondary">T5</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-2 bg-success h-16 rounded-full mb-1"></div>
+                                    <span class="text-xs text-text-secondary">T6</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-2 bg-accent h-12 rounded-full mb-1"></div>
+                                    <span class="text-xs text-text-secondary">T7</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <div class="w-2 bg-secondary h-14 rounded-full mb-1"></div>
+                                    <span class="text-xs text-text-secondary">CN</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Writing Streak -->
+                        <div class="bg-gradient-to-r from-success-50 to-accent-50 rounded-gentle p-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm font-medium text-text-primary">Chuỗi viết nhật ký</span>
+                                <span class="text-lg">🔥</span>
+                            </div>
+                            <p class="text-2xl font-be-vietnam font-semibold text-success mb-1">7 ngày</p>
+                            <p class="text-xs text-text-secondary">Tuyệt vời! Bạn đã viết liên tục 7 ngày</p>
+                        </div>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div class="bg-white rounded-sanctuary p-6 shadow-gentle">
+                        <h3 class="text-lg font-be-vietnam font-medium text-text-primary mb-4">Hành động nhanh</h3>
+                        <div class="space-y-3">
+                            <a href="h_nh_d_ng_t_i_thought_monsters_gamification.html" class="flex items-center p-3 rounded-gentle border border-border-light hover:bg-accent-50 breathing-transition">
+                                <svg class="w-5 h-5 text-accent mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-sm text-text-primary">Tạo quái vật từ suy nghĩ</span>
+                            </a>
+                            <a href="ai_chat_interface_conversational_therapy.html" class="flex items-center p-3 rounded-gentle border border-border-light hover:bg-primary-50 breathing-transition">
+                                <svg class="w-5 h-5 text-primary mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-sm text-text-primary">Trò chuyện với AI</span>
+                            </a>
+                            <a href="kh_m_ph_personalized_coping_discovery.html" class="flex items-center p-3 rounded-gentle border border-border-light hover:bg-secondary-50 breathing-transition">
+                                <svg class="w-5 h-5 text-secondary mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-sm text-text-primary">Khám phá kỹ thuật mới</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-8 text-primary" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm0 6c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4zm0 18c-3.314 0-6.22-1.686-7.93-4.25C8.588 20.124 12.294 19 16 19s7.412 1.124 7.93 2.75C22.22 24.314 19.314 26 16 26z"/>
+                        </svg>
+                        <span class="ml-3 text-xl font-be-vietnam font-semibold">Bạn Thương</span>
+                    </div>
+                    <p class="text-gray-300 mb-4 max-w-md">
+                        Sanctuary tâm lý số dành cho học sinh Việt Nam. Nơi an toàn để chia sẻ, học hỏi và phát triển sức khỏe tinh thần.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-be-vietnam font-medium mb-4">Liên kết nhanh</h3>
+                    <ul class="space-y-2">
+                        <li><a href="ai_chat_interface_conversational_therapy.html" class="text-gray-300 hover:text-primary breathing-transition">AI Chat</a></li>
+                        <li><a href="t_m_s_m_ng_private_journal_space.html" class="text-gray-300 hover:text-primary breathing-transition">Tâm sự mỏng</a></li>
+                        <li><a href="h_nh_d_ng_t_i_thought_monsters_gamification.html" class="text-gray-300 hover:text-primary breathing-transition">Hình dáng tôi</a></li>
+                        <li><a href="kh_m_ph_personalized_coping_discovery.html" class="text-gray-300 hover:text-primary breathing-transition">Khám phá</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h3 class="text-lg font-be-vietnam font-medium mb-4">Hỗ trợ</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-primary breathing-transition">Hotline: 1900-xxx-xxx</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary breathing-transition">Email hỗ trợ</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary breathing-transition">Câu hỏi thường gặp</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary breathing-transition">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">© 2025 Bạn Thương. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Prompt button functionality
+        document.querySelectorAll('.prompt-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const prompt = this.dataset.prompt;
+                const textarea = document.getElementById('journal-textarea');
+                textarea.value = prompt + ' ';
+                textarea.focus();
+                updateWordCount();
+            });
+        });
+
+        // Theme selector functionality
+        document.querySelectorAll('.theme-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const theme = this.dataset.theme;
+                const writingArea = document.getElementById('writing-area');
+                
+                // Remove active state from all buttons
+                document.querySelectorAll('.theme-btn').forEach(b => {
+                    b.classList.remove('border-primary');
+                    b.classList.add('border-transparent');
+                });
+                
+                // Add active state to clicked button
+                this.classList.remove('border-transparent');
+                this.classList.add('border-primary');
+                
+                // Apply theme
+                writingArea.className = 'writing-area rounded-gentle p-6 mb-4 min-h-96 border border-border-light';
+                switch(theme) {
+                    case 'sky':
+                        writingArea.classList.add('bg-gradient-to-br', 'from-blue-50', 'to-blue-100');
+                        break;
+                    case 'nature':
+                        writingArea.classList.add('bg-gradient-to-br', 'from-green-50', 'to-green-100');
+                        break;
+                    case 'sunset':
+                        writingArea.classList.add('bg-gradient-to-br', 'from-pink-50', 'to-orange-100');
+                        break;
+                    case 'night':
+                        writingArea.classList.add('bg-gradient-to-br', 'from-purple-50', 'to-indigo-100');
+                        break;
+                    default:
+                        writingArea.classList.add('bg-gradient-to-br', 'from-background', 'to-surface');
+                }
+            });
+        });
+
+        // Word count functionality
+        function updateWordCount() {
+            const textarea = document.getElementById('journal-textarea');
+            const wordCount = document.getElementById('word-count');
+            const words = textarea.value.trim().split(/\s+/).filter(word => word.length > 0);
+            wordCount.textContent = words.length + ' từ';
+        }
+
+        document.getElementById('journal-textarea').addEventListener('input', updateWordCount);
+
+        // Breathing exercise functionality
+        document.getElementById('breathing-toggle').addEventListener('click', function() {
+            const exercise = document.getElementById('breathing-exercise');
+            exercise.classList.toggle('hidden');
+            
+            if (!exercise.classList.contains('hidden')) {
+                // Start breathing exercise
+                setTimeout(() => {
+                    exercise.classList.add('hidden');
+                }, 30000); // Auto-hide after 30 seconds
+            }
+        });
+
+        // Entry card click functionality
+        document.querySelectorAll('.entry-card').forEach(card => {
+            card.addEventListener('click', function() {
+                // Simulate loading previous entry
+                const textarea = document.getElementById('journal-textarea');
+                const content = this.querySelector('.line-clamp-2').textContent;
+                textarea.value = content + '...';
+                updateWordCount();
+                
+                // Scroll to writing area
+                document.getElementById('writing-area').scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+            });
+        });
+
+        // Auto-save functionality (simulation)
+        let autoSaveTimer;
+        document.getElementById('journal-textarea').addEventListener('input', function() {
+            clearTimeout(autoSaveTimer);
+            autoSaveTimer = setTimeout(() => {
+                // Simulate auto-save
+                console.log('Auto-saved journal entry');
+            }, 2000);
+        });
+
+        // Gentle animations on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.shadow-gentle, .shadow-therapeutic').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+<script id="dhws-elementInspector" src="../public/dhws-web-inspector.js"></script>
+<script id="dhws-errorTracker" src="../public/dhws-error-tracker.js"></script>
+</body>
+</html>
