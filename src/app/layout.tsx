@@ -5,6 +5,7 @@ import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import '@/styles/globals.css'
 import { StagewiseClient } from '@/components/StagewiseClient'
+import { CrisisAlertProvider } from '@/hooks/useCrisisAlert'
 
 const beVietnamPro = Be_Vietnam_Pro({
   subsets: ['vietnamese'],
@@ -36,13 +37,15 @@ export default function RootLayout({
     <html lang="vi" className={`${beVietnamPro.variable} ${inter.variable}`}>
       <body className="min-h-screen flex flex-col">
         <StagewiseClient />
-        <Providers>
-          <Header />
-          <main className="flex-grow">
-            {children}
-          </main>
-          <Footer />
-        </Providers>
+        <CrisisAlertProvider>
+          <Providers>
+            <Header />
+            <main className="flex-grow">
+              {children}
+            </main>
+            <Footer />
+          </Providers>
+        </CrisisAlertProvider>
       </body>
     </html>
   )
